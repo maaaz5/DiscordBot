@@ -1,6 +1,6 @@
 # Python Discord Bot
 
-Basically this bot have some slash commands for ex:
+Basically this bot have some slash commands for example:
 
 1. Add(x,y,n...): Function that takes an array of number and prints the addition of those numbers.
 2. hru: Replies to the user with Good!

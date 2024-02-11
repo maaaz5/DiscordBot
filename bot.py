@@ -3,6 +3,7 @@ from discord.ext import commands
 import os
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 
@@ -29,9 +30,22 @@ async def hru(ctx):
 
 
 @bot.slash_command(name='hola', description='spanish bot :)')
-async def hru(ctx):
+async def hola(ctx):
     await ctx.send('hola mi hermano!')
 
+
+@bot.slash_command(name='ping', help='Check the bot\'s latency')
+async def ping(ctx):
+    latency = round(bot.latency * 1000)  # Convert to milliseconds
+    await ctx.send(f'Pong! Latency: {latency}ms')
+
+
+@bot.command()
+async def add(ctx, *arr):
+    result = 0
+    for i in arr:
+        result += int(i)
+    await ctx.send(f"Result: {result}")
 # Event: Respond to messages
 
 

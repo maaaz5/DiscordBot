@@ -1,4 +1,4 @@
-#Python Discord Bot
+# Python Discord Bot
 
 Basically this bot have some slash commands for ex:
 
